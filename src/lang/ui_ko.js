@@ -1,22 +1,22 @@
 // the following is used in a few places below
-var mac_user_save_files_ko = ' <b>Mac users:</b> please see <a href="https://github.com/aroberge/reeborg/blob/master/dev_tools/known_problems.md" target="_blank" rel="noopener">Known problems</a>.';
+var mac_user_save_files_ko = ' <b>맥 사용자 참고사항:</b><a href="https://github.com/aroberge/reeborg/blob/master/dev_tools/known_problems.md" target="_blank" rel="noopener">Known problems</a>.';
 
 exports.ui_ko = ui_ko = {};
 exports.ko_to_en = ko_to_en = {};
 
-ui_ko["ko-en"] = "혼용된 모드: 사용자 환경은 한국어로 번역되어 있지만, 프로그래밍 언어는 영어로 이루어져 있습니다. <br>" +
- "Mixed mode: User Interface in Korean; programming language in English.<br>";
+ui_ko["ko-en"] = "혼합 모드: 사용자 환경은 한국어지만, 프로그래밍 언어는 영어입니다. <br>" +
+	"Mixed mode: User Interface in Korean; programming language in English.<br>";
 
-ui_ko["SITE NAME"] = "리보그의 세상";
+ui_ko["SITE NAME"] = "리보그 월드";
 ui_ko["WORLD INFO"] = "월드 정보";
-ui_ko["EDITOR VISIBLE"] = "에디터 유지하기";
+ui_ko["EDITOR VISIBLE"] = "에디터";
 
 
 ui_ko["apple"] = "사과";
 ko_to_en["사과"] = "apple";
 ui_ko["banana"] = "바나나";
 ko_to_en["바나나"] = "banana";
-ui_ko["beeper"] = "beeper";
+ui_ko["beeper"] = "삐삐";
 ko_to_en["beeper"] = "beeper";
 ui_ko["box"] = "상자";
 ko_to_en["상자"] = "box";
@@ -37,7 +37,7 @@ ko_to_en["별"] = "star";
 ui_ko["strawberry"] = "딸기";
 ko_to_en["딸기"] = "strawberry";
 ui_ko.token = "토큰";
-ui_ko["tokens are Reeborg's favourite thing."] = "토큰 are Reeborg's favourite thing.";
+ui_ko["tokens are Reeborg's favourite thing."] = "`토큰`은 리보그가 좋아하는 것이예요.";
 ko_to_en["토큰"] = "token";
 ui_ko.triangle = "삼각형";
 ko_to_en["삼각형"] = "triangle";
@@ -46,7 +46,7 @@ ko_to_en["튤립"] = "tulip";
 ui_ko["bucket"] = "물통"; // bucket of water; translated using google
 ko_to_en["물통"] = "bucket";
 
-ui_ko["bricks"] = "bricks";  // translation needed
+ui_ko["bricks"] = "블럭";  // translation needed
 ko_to_en["bricks"] = "bricks";
 
 ui_ko["mud"] = "진흙";
@@ -65,11 +65,11 @@ ui_ko["fire"] = "불";
 ko_to_en["불"] = "fire"; // translated using google
 // the following need translations; I do not trust google based
 // on its recommendation for the French translation.
-ui_ko["bulb"] = "tulip bulb";
+ui_ko["bulb"] = "튤립 구근";
 ko_to_en["tulip bulb"] = "bulb";
 ui_ko["Tulip bulb: might grow into a nice tulip with some water from a bucket."] = "Tulip bulb: might grow into a nice tulip with some water from a bucket.";
 
-ui_ko["infinite"] = "infinite number";
+ui_ko["infinite"] = "무한수";
 
 
 // more translations needed
@@ -82,8 +82,8 @@ ko_to_en["울타리 double"] = "fence_double";
 ui_ko["fence_vertical"] = "울타리";
 ko_to_en["울타리 vertical"] = "fence_vertical";
 
-ui_ko["Invalid Javascript code in Onload editor"] = "유효하지 않은 자바스크립트 onload 코드입니다; 이 월드의 제작자에게 연락하세요.";
-ui_ko["Invalid Python code in Onload editor"] = "유효하지 않은 파이썬 onload 코드입니다; 이 월드의 제작자에게 연락하세요.";
+ui_ko["Invalid Javascript code in Onload editor"] = "Onlad에디터에는 유효하지 않은 자바스크립트 코드예요.";
+ui_ko["Invalid Python code in Onload editor"] = "Onlad에디터에는 유효하지 않은 파이썬 코드예요.";
 
 ui_ko["Too many steps:"] = "단계가 너무 많습니다: {max_steps}<br>한계를 높이려면 <code>set_max_nb_steps(nb)</code>를 사용하십시오.";
 ui_ko["<li class='success'>Reeborg is at the correct x position.</li>"] = "<li class='success'>리보그는 올바른 x 위치에 있습니다. </li>";
@@ -101,11 +101,11 @@ ui_ko["Unknown object"] = "알 수 없는 객체: <code>{obj}</code>";
 ui_ko["No object found here"] = "여기서 <code>{obj}</code> 를 찾을 수 없어요!";
 ui_ko["object"] = "객체";
 ui_ko["I don't have any object to put down!"] = "나는 집어넣을 <code>{obj}</code> 가 없어요!";
-ui_ko["There is already a wall here!"] = "벽이 여기에 이미 있어요!";
-ui_ko["There is no wall to remove!"] = "There is no wall to remove!";
-ui_ko["Ouch! I hit a wall!"] = "아으, 아파요! 저는 벽을 부딪혔어요!";
-ui_ko["Done!"] = "끝!";
-ui_ko["There is no position as a goal in this world!"] = "위치에 대한 목표가 없어요!";
+ui_ko["There is already a wall here!"] = "벽이 이미 있어요!";
+ui_ko["There is no wall to remove!"] = "제거할 벽이 없네요!";
+ui_ko["Ouch! I hit a wall!"] = "어흑! 벽에 부딪혔어요!";
+ui_ko["Done!"] = "완료!";
+ui_ko["There is no position as a goal in this world!"] = "이 월드에 `목표 위치`가 없어요!";
 ui_ko["There is no goal in this world!"] = "이 월드는 목표가 없어요.";
 ui_ko["I carry too many different objects. I don't know which one to put down!"] = "저는 너무 많은 다른 객체들을 싣고 있어요. 저는 이중 어떤 걸 내려놓을지 모르겠어요!";
 ui_ko["Many objects are here; I do not know which one to take!"] = "많은 객체가 여기에 있어요; 저는 그 중 어떤 걸 가져갈지 모르겠어요!";
@@ -118,17 +118,17 @@ ko_to_en["동쪽"] = "east";
 ko_to_en["북쪽"] = "north";
 ko_to_en["서쪽"] = "west";
 ko_to_en["남쪽"] = "south";
-ui_ko["Unknown orientation for robot."] = "로봇의 방향을 알 수 없습니다.";
+ui_ko["Unknown orientation for robot."] = "로봇의 방향을 알 수 없어요.";
 
 ui_ko["Invalid position."] = "{pos} is an invalid position.";
 ui_ko["Invalid orientation."] = "'{orient}' is an unknown orientation.";
 
 ui_ko["World selected"] = "월드 {world} 가 선택되었습니다";
-ui_ko["Could not find world"] = "월드를 찾을 수 없습니다. {world}";
+ui_ko["Could not find world"] = "월드가 없어요.`{world}`";
 ui_ko["Object names"] = " 라이브러리, 토큰, 별, 삼각형, 사각형, 등.";
 
-ui_ko["Invalid world file."] = "유효하지 않은 월드 파일.";
-ui_ko["Could not find link: "] = "링크를 찾을 수 없습니다: ";
+ui_ko["Invalid world file."] = "월드 파일이 잘못 됐네요.";
+ui_ko["Could not find link: "] = "링크를 찾을 수 없어요: ";
 
 ui_ko["Click on world to move robot."] = "월드를 클릭해서 추가하거나 시작 가능한 리보그 위치를 제거합니다.";
 ui_ko["Added robot."] = "리보그 추가됨.";
@@ -195,8 +195,8 @@ ui_ko["brick wall: Reeborg <b>can</b> detect this but will hurt himself if he at
 ui_ko["I hit a fence!"] = "I hit a fence!";
 ui_ko["Fence: Reeborg <b>can</b> detect this but will be stopped by it."] = "울타리: 리보그는 이것을  <b>can</b> 탐지 할 수 있지만 그것에 의해 중지됩니다.";
 ui_ko["Bridge:Reeborg <b>can</b> detect this and will know that it allows safe passage over water."] = "리보그는 이것을 탐지 할 수 <b>있으며</b> 이 물 위에서 안전한 통행을 허용하는것을 알게 될 것입니다.";
-ui_ko["My joints are melting!"] = "내 관절이 녹고있어."; // translated using google
-ui_ko["A bucket full of water."] = "A bucket full of water.";
+ui_ko["My joints are melting!"] = "내 관절이 녹고있어요."; // translated using google
+ui_ko["A bucket full of water."] = "물통이 가득찼어요.";
 
 ui_ko["Something is blocking the way!"] = "뭔가가 길을 막고 있어요!";
 ui_ko["Reeborg <b>can</b> detect this tile using at_goal()."] = "리보그는 at_goal() 를 사용해서 탐지 할 수 <b>있어요</b>.";
@@ -216,18 +216,18 @@ ui_ko["put object"] = "객체 넣기";
 ui_ko["Pause the program's execution."] = "프로그램 일시 정지.";
 ui_ko["Build a wall in front of the robot."] = "벽을 로봇 앞에 짓기.";
 ui_ko["End the program's execution."] = "프로그램 실행 종료.";
-ui_ko["True if a wall is blocking the way."] = "벽이 길을 막고 있는 경우가 사실이라면.";
-ui_ko["True if nothing is blocking the way."] = "아무것도 차단 하지 않는 경우가 사실이라면.";
-ui_ko["True if desired destination."] = "원하는 목적지가 있는 경우가 사실이라면";
-ui_ko["True if robot carries at least one object."] = "로봇이 적어도 하나의 객체를 싣고 있는 경우가 사실이라면.";
-ui_ko["True if there is at least one object here."] = "적어도 하나의 객체가 여기에 있는 경우가 사실이라면.";
-ui_ko["True if robot is facing North."] = "만약 로봇이 북쪽을 바라보고 있는 경우가 사실이라면.";
-ui_ko["Delay between actions; default is 300 ms."] = "행동을 지연시킵니다; 기본값은 300 밀리초.";
+ui_ko["True if a wall is blocking the way."] = "벽이 길을 막고 있으면 `참`";
+ui_ko["True if nothing is blocking the way."] = "아무것도 막고있지 않으면 `참`";
+ui_ko["True if desired destination."] = "원하는 목적지이면 `참`";
+ui_ko["True if robot carries at least one object."] = "로봇이 적어도 하나의 객체를 싣고 있으면 `참`";
+ui_ko["True if there is at least one object here."] = "적어도 하나의 객체가 있다면 `참`";
+ui_ko["True if robot is facing North."] = "로봇이 북쪽을 바라보고 있으면 `참`";
+ui_ko["Delay between actions; default is 300 ms."] = "행동 지연; 기본값은 300 밀리초.";
 
 ui_ko["Save world in browser"] = "월드를 브라우저에 저장하기";
 ui_ko["Save permalink"] = "퍼머 저장";
 ui_ko["Save permalink explanation"] = "파일의 퍼머링크 복사본을 저장하기";
-ui_ko["LOAD BLOCKLY"] = "프로그램(블럭들)을 파일에서 불러오기";
+ui_ko["LOAD BLOCKLY"] = "프로그램 불러오기";
 ui_ko["LOAD BLOCKLY EXPLAIN"] = "로컬 파일을 열고 Blockly 작업공간의 요소 대신에 이 요소를 사용합니다";
 ui_ko["LOAD EDITOR"] = "파일로 불러오기";
 ui_ko["LOAD EDITOR EXPLAIN"] = "로컬 저장소에서 소스코드 불러오기";
@@ -235,21 +235,21 @@ ui_ko["LOAD LIBRARY"] = "파일에서 라이브러리를 가져오기";
 ui_ko["LOAD LIBRARY EXPLAIN"] = "파일을 열고 라이브러리의 컨텐츠를 지금 사용합니다.";
 ui_ko["LOAD WORLD"] = "파일로 불러오기";
 ui_ko["LOAD WORLD EXPLAIN"] = "컴퓨터안의 파일로 월드를 불러오기";
-ui_ko["SAVE BLOCKLY"] = "Save program to file";
+ui_ko["SAVE BLOCKLY"] = "프로그램 저장";
 ui_ko["SAVE BLOCKLY EXPLAIN"] = "Saves the current blocks in a file." + mac_user_save_files_ko;
 ui_ko["SAVE EDITOR"] = "파일로 저장";
 ui_ko["SAVE EDITOR EXPLAIN"] = "에디터 소스코드 저장" + mac_user_save_files_ko;
 ui_ko["SAVE LIBRARY"] = "라이브러리 저장";
 ui_ko["SAVE LIBRARY EXPLAIN"] = "파일 라이브러리의 내용 저장" + mac_user_save_files_ko;
 ui_ko["SAVE WORLD"] = "파일로 저장";
-ui_ko["SAVE WORLD EXPLAIN"] = "(json 확장자) 월드를 컴퓨터에 저장" + mac_user_save_files_ko;
+ui_ko["SAVE WORLD EXPLAIN"] = "월드(.json)를 컴퓨터에 저장" + mac_user_save_files_ko;
 
 ui_ko["PROGRESS SECTION TITLE"] = "Keeping track of tasks solved";
 ui_ko["PROGRESS EXPLAIN"] = "Tasks solved are marked with " + RUR.CHECKMARK +
-    "in the world selector and the information is saved in your browser. If you use a different browser, " +
-    "the tasks you have already solved using a different browser will not be shown. " +
-    "If you click on the save button below, a file named progress.json will be saved with the tasks solved " +
-    "recorded in the current browser. You can import this file in a different browser so that your progress can be updated.";
+	"in the world selector and the information is saved in your browser. If you use a different browser, " +
+	"the tasks you have already solved using a different browser will not be shown. " +
+	"If you click on the save button below, a file named progress.json will be saved with the tasks solved " +
+	"recorded in the current browser. You can import this file in a different browser so that your progress can be updated.";
 ui_ko["SAVE PROGRESS"] = "Save";
 ui_ko["IMPORT PROGRESS"] = "Import";
 ui_ko["RETRIEVE SOLUTION"] = "Retrieve solution";
@@ -264,15 +264,16 @@ ui_ko["ADD POST TEXT"] = "Post";
 ui_ko["ADD DESCRIPTION TEXT"] = "Description";
 ui_ko["ADD ONLOAD TEXT"] = "Onload";
 
-ui_ko["KEYBOARD BUTTON"] = "리보그의 키보드";
-ui_ko["ADDITIONAL OPTIONS"] = "추가 설정";
+ui_ko["KEYBOARD BUTTON"] = "리보그 키보드";
+ui_ko["ADDITIONAL OPTIONS"] = "설정";
 
-ui_ko["BASIC COMMANDS"] = "기본적인 명령어";
-ui_ko["DEFINING"] = "정의";
-ui_ko["LOOPS"] = "루프";
-ui_ko["DECISIONS"] = "결정";
+//reference from naver entry by jogyram 2022/11/10 
+ui_ko["BASIC COMMANDS"] = "기본 명령";
+ui_ko["DEFINING"] = "함수";
+ui_ko["LOOPS"] = "흐름";
+ui_ko["DECISIONS"] = "조건";
 ui_ko["CONDITIONS"] = "상태";
-ui_ko["USING VARIABLES"] = "변수 사용하기";
+ui_ko["USING VARIABLES"] = "변수";
 ui_ko["COMMANDS"] = "명령어들";
 ui_ko["OTHER"] = "그 외";
 ui_ko["OBJECTS"] = "객체들";
@@ -299,12 +300,12 @@ ui_ko["EDIT WORLD EXPLAIN"] = "기존 월드를 수정하여 자신 만의 월�
 ui_ko["PROGRAM IN EDITOR"] = "에디터";
 ui_ko["PROGRAM IN BLOCKLY WORKSPACE"] = "blockly 작업 공간 프로그램";
 ui_ko["CONTACT"] = "(English/French only) 이메일:";
-ui_ko["ISSUES"] = "버그 제보, 건의 그외 문제 등. (영어/프랑스어만 됨)";
-ui_ko["FORUM"] = "토론 포럼 (영어/프랑스어만 됨";
+ui_ko["ISSUES"] = "버그 제보, 건의 그외 문제 등. (영어/프랑스어)";
+ui_ko["FORUM"] = "토론 포럼 (영어/프랑스어)";
 ui_ko["HELP"] = "도움말";
 ui_ko["DOCUMENTATION"] = '<a href="http://reeborg.ca/docs/ko" target="_blank" rel="noopener">Documentation (참고 문서)</a>';
 ui_ko["PYTHON HELP"] = "파이썬을 사용해서, <code>help()</code>를 실행해서 명령어의 목록을 얻으세요 또는 <code>help(함수명)</code>으로 해당 <code>함수명()</code>의 정보를 확인할 수 있습니다. 예를 들어, <code>help(move)</code>로 <code>move</code>함수의 정보를 얻을 수 있습니다.";
-ui_ko["KEYBOARD HELP"] = "리보그의 키보드를 클릭해서 파이썬 키워드 등, 사용할수 있는 명령어의 목록을 보세요.";
+ui_ko["KEYBOARD HELP"] = "`리보그 키보드`를 클릭해서 키워드와 명령어를 선택할 수 있어요.";
 
 ui_ko["WORLD EDITOR"] = "월드 편집기";
 ui_ko["m-east"] = "동쪽";
@@ -337,9 +338,9 @@ ui_ko["Reeborg shouts: Something is wrong!"] = "리보그의 외침: 뭔가 잘�
 ui_ko["Reeborg explores some Javascript code"] = "리보그는 일부 자바스크립트 코드를 조사했습니다";
 ui_ko["Reeborg states:"] = "리보그 상태:";
 ui_ko["Reeborg watches some variables!"] = "리보그는 몇가지의 변수를 보고 있습니다!";
-ui_ko["Click on the world to get some additional information."] = "추가 정보를 얻기 위해 월드를 클릭합니다.";
+ui_ko["Click on the world to get some additional information."] = "리보그 미션";
 
-ui_ko["Reeborg's basic keyboard"] = "리보그의 기본적인 키보드";
+ui_ko["Reeborg's basic keyboard"] = "리보그 키보드";
 ui_ko["kbd-command-btn"] = "명령어";
 ui_ko["kbd-condition-btn"] = "상태";
 ui_ko["kbd-python-btn"] = "파이썬";

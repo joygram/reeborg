@@ -9,6 +9,6 @@ Implement:
   ☐ In world_init.js, assign the total number of objects to a global variable, and provide a method to get access to this value.
   ☐ See http://www.labri.fr/perso/nrougier/from-python-to-numpy/ for maze making and search algorithms
   ☐ Change recording() so that it returns the previously recording state.
-
+  ☐ 한국어 기준으로 변경  
 Check:
   ☐ get_thing returns the correct thing for all things

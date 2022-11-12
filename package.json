@@ -1,38 +1,38 @@
 {
-  "name": "reeborg",
-  "version": "1.0.0",
-  "private": true,
-  "description": "Reeborg's World engine",
-  "scripts": {
-    "test": "tape tests/unit_tests/**/*.js | faucet | time /t",
-    "tests": "tape tests/unit_tests/**/*.js | faucet | time /t",
-    "test-raw": "tape tests/unit_tests/**/*.js",
-    "test-spec": "tape tests/unit_tests/**/*.js | tap-spec",
-    "test-dot": "tape tests/unit_tests/**/*.js | tap-dot",
-    "build": "tape tests/unit_tests/**/*.js | faucet && browserify ./src/js/index.js -o ./build/reeborg.js | time /t",
-    "only-build": "browserify ./src/js/index.js -o ./build/reeborg.js",
-    "jsdoc": "jsdoc -c dev_tools/jsdoc_conf.json"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/aroberge/reeborg.git"
-  },
-  "author": "André Roberge",
-  "license": "CC-BY-4.0",
-  "bugs": {
-    "url": "https://github.com/aroberge/reeborg/issues"
-  },
-  "homepage": "https://github.com/aroberge/reeborg#readme",
-  "devDependencies": {
-    "faucet": "0.0.1",
-    "ink-docstrap": "^1.1.0",
-    "jsdoc": "^3.4.3",
-    "madge": "^5.0.1",
-    "mock-require": "^1.2.1",
-    "silencer": "0.0.2",
-    "tape": "^4.4.0"
-  },
-  "dependencies": {
-    "browserify": "^17.0.0"
-  }
+	"name": "reeborg",
+	"version": "1.0.0",
+	"private": true,
+	"description": "Reeborg's World engine",
+	"scripts": {
+		"test": "tape tests/unit_tests/**/*.js | faucet ",
+		"tests": "tape tests/unit_tests/**/*.js | faucet",
+		"test-raw": "tape tests/unit_tests/**/*.js",
+		"test-spec": "tape tests/unit_tests/**/*.js | tap-spec",
+		"test-dot": "tape tests/unit_tests/**/*.js | tap-dot",
+		"build": "tape tests/unit_tests/**/*.js | faucet && browserify ./src/js/index.js -o ./build/reeborg.js",
+		"only-build": "browserify ./src/js/index.js -o ./build/reeborg.js",
+		"jsdoc": "jsdoc -c dev_tools/jsdoc_conf.json"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/aroberge/reeborg.git"
+	},
+	"author": "André Roberge",
+	"license": "CC-BY-4.0",
+	"bugs": {
+		"url": "https://github.com/aroberge/reeborg/issues"
+	},
+	"homepage": "https://github.com/aroberge/reeborg#readme",
+	"devDependencies": {
+		"faucet": "0.0.1",
+		"ink-docstrap": "^1.3.2",
+		"jsdoc": "^3.4.3",
+		"madge": "^5.0.1",
+		"mock-require": "^1.3.0",
+		"silencer": "0.0.2",
+		"tape": "^4.16.1"
+	},
+	"dependencies": {
+		"browserify": "^17.0.0"
+	}
 }
